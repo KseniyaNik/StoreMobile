@@ -8,7 +8,7 @@ export default function App() {
     {
       id:1, //идентификация
       title:'iPhone 15 Pro Max', //наименование товара
-      img:'iPhone 15 Pro Max.jpg', //картинка
+      img:'iPhone 15 Pro Max.png', //картинка
       desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ', //текст о товаре (описание)
       category:'Apple',// категория товара
       price:'1000',//стоимость товара (только числа)
@@ -16,7 +16,7 @@ export default function App() {
     {
       id:2,
       title:'iPhone 15',
-      img:'iPhone 15.jpg', 
+      img:'iPhone 15.png', 
       desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ', 
       category:'Apple',
       price:'800',
@@ -24,7 +24,7 @@ export default function App() {
     {
       id:3,
       title:'iPhone 11',
-      img:'iPhone 11.jpg', 
+      img:'iPhone 11.png', 
       desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ', 
       category:'Apple',
       price:'400',
@@ -32,7 +32,7 @@ export default function App() {
     {
       id:4,
       title:'Honor 50',
-      img:'Honor 50.jpg', 
+      img:'Honor 50.png', 
       desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ', 
       category:'Honor',
       price:'200',
@@ -40,7 +40,7 @@ export default function App() {
     {
       id:5,
       title:'Redmi Note 12',
-      img:'Redmi Note 12.jpg', 
+      img:'Redmi Note 12.png', 
       desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ', 
       category:'Xiaomi',
       price:'170',
@@ -48,7 +48,7 @@ export default function App() {
     {
       id:6,
       title:'Redmi Note 13 Pro',
-      img:'Redmi Note 13 Pro.jpg', 
+      img:'Redmi Note 13 Pro.png', 
       desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ', 
       category:'Xiaomi',
       price:'200',
@@ -56,7 +56,7 @@ export default function App() {
     {
       id:7,
       title:'Samsung Galaxy A54',
-      img:'Samsung Galaxy A54.avif', 
+      img:'Samsung Galaxy A54.png', 
       desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ', 
       category:'Samsung',
       price:'350',
@@ -80,7 +80,7 @@ export default function App() {
     {
       id:10,
       title:'Realme C53',
-      img:'Realme C53.jpg', 
+      img:'Realme C53.png', 
       desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ', 
       category:'Realme',
       price:'160',
