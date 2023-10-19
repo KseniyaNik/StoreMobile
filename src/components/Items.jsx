@@ -5,7 +5,7 @@ export default function Items(props){
     return(
         <main>
             {props.allItems.map(el=>(
-                <Item key={el.id} item2={el}/>
+                <Item key={el.id} item2={el} onAdd={props.onAdd}/>
                 //<h1>{el.title}</h1>
             ))}
         </main>
