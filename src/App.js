@@ -88,14 +88,19 @@ export default function App() {
     }]);
 
     const addToOrder=(item3)=>{
-      if(!orders.some((el)=>el.id===item3.id)){  //однозначно равно
-        setOrders([...orders,item3]);//... - множество(массив)
-      }
-    }
+    // if(!orders.some((el)=>el.id===item3.id)){  //однозначно равно
+     // setOrders([...orders,item3]);//... - множество(массив)
+     // }
+     setOrders([...orders,item3]);
+    };
+
+    const deleteOrder=(id)=>{
+      setOrders(orders.filter((el)=>el.id !== id));
+    };
 
   return (
     <div className="wrapper">
-    <Header orders={orders}/>
+    <Header orders={orders} onDelete={deleteOrder}/>
     <Items allItems={items} onAdd={addToOrder}/>
     <Footer/>
     </div>

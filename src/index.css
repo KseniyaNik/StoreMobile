@@ -21,6 +21,7 @@
   position: relative;
  }
 
+
  header .logo{
   font-weight: 700;
   font-size: 20px;
@@ -67,6 +68,13 @@
   padding-bottom: 0;
  }
 
+ 
+ header .shop-cart .empty h2{
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 20px;
+ }
+
  header .shop-cart .item{
   width: 100%;
   float: left;
@@ -87,6 +95,28 @@
  header .shop-cart .item b{
   color:#234a6c;
   font-weight: 700;
+ }
+
+ header .shop-cart .item .delete-icon{
+  float: right;
+  position: relative;
+  top:-25px;
+  cursor: pointer;
+  transition: color,transform 500ms ease;
+ }
+
+ header .shop-cart .item .delete-icon:hover{
+  color: #234a6c;
+  transform: scale(1.5);
+ }
+
+ header .shop-cart .summa{
+  float: left;
+  width: 100%;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #234a6c;
  }
 
  header .presentation{
