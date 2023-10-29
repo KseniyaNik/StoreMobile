@@ -1,10 +1,15 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Items from "./components/Items";
+import Categories from "./components/Categories";
+import ShowFullItems from "./components/ShowFullItem";
+import ShowFullItem from "./components/ShowFullItem";
 
 export default function App() {
   const [orders, setOrders]=useState([]);
+  const [currentItems,setCurrenItems]=useState([]);
+  const [showFullItem,setShowFullItem]=useState(false);
   const [items,setItems]=useState([
     {
       id:1, //идентификация
@@ -85,7 +90,12 @@ export default function App() {
       desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ', 
       category:'Realme',
       price:'160',
-    }]);
+    }
+]);
+
+    useEffect(()=>{
+      setCurrenItems(items);
+    }, [items])
 
     const addToOrder=(item3)=>{
     // if(!orders.some((el)=>el.id===item3.id)){  //однозначно равно
@@ -98,10 +108,25 @@ export default function App() {
       setOrders(orders.filter((el)=>el.id !== id));
     };
 
+    const chooseCategory=(category)=>{
+      if(category==='all'){
+        setCurrenItems(items);
+      }
+      else{
+        setCurrenItems(items.filter((el)=>el.category===category));
+      }
+    };
+
+    const onShowItem=(item)=>{
+      setShowFullItem(!showFullItem);
+    }
+
   return (
     <div className="wrapper">
     <Header orders={orders} onDelete={deleteOrder}/>
-    <Items allItems={items} onAdd={addToOrder}/>
+    <Categories chooseCategory={chooseCategory}/>
+    <Items allItems={currentItems} onShowItem={onShowItem} onAdd={addToOrder}/>
+    {showFullItem && <ShowFullItem/>}
     <Footer/>
     </div>
   );
