@@ -171,6 +171,30 @@
   transform: scale(1.1);
  }
 
+ .full-item{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:#72b3ec79;
+  z-index: 9999;
+  overflow: auto;
+ }
+
+ .full-item > div {
+  width: 600px;
+  position: relative;
+  margin: 10% auto;
+  padding: 40px 30px;
+  background: #b1d3f1;
+  border-radius: 5px;
+ }
+
+ .full-item > div >img{
+  width: 600px;
+ }
+
  main{
    display: flex;
    width: 100%;
@@ -187,7 +211,8 @@
    position: relative;
  }
 
- main .item img{
+ main .item img,
+ .full-item .item img{
    width: 100%;
    height: 60%;
    transition: transform 500ms ease;
@@ -195,24 +220,27 @@
   }
 
 
- main .item img:hover{
+ main .item img:hover,
+ .full-item .item img:hover{
    transform: scale(1.05);
  }
 
- main h2,
- main p,
- main b{
+ main h2, .full-item h2,
+ main p,  .full-item p,
+ main b,  .full-item b{
    margin: 10px 20px;
    color:rgb(18, 19, 23);
    padding: 25px;
  }
 
- main b{
+ main b,
+ .full-item b{
    color: rgb(178, 103, 4);
    font-size: 25px;
  }
 
- main .add-to-cart{
+ main .add-to-cart,
+ .full-item .add-to-cart{
    position: absolute;
    right:20px;
    bottom: 20px;
@@ -227,7 +255,8 @@
    transition: transform 500ms ease;
  }
 
- main .add-to-cart:hover{
+ main .add-to-cart:hover,
+ .full-item .add-to-cart:hover{
    transform: scale(1.05) translateY(-5px);
    
 }

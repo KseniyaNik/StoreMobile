@@ -1,0 +1,84 @@
+{
+    "items":[
+        {
+          "id":1,
+          "title":"iPhone 15 Pro Max",
+          "img":"iPhone 15 Pro Max.png", 
+          "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+          "category":"Apple",
+          "price":"1000"
+        },
+        {
+          "id":2,
+          "title":"iPhone 15",
+          "img":"iPhone 15.png", 
+          "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ", 
+          "category":"Apple",
+          "price":"800"
+        },
+        {
+          "id":3,
+          "title":"iPhone 11",
+          "img":"iPhone 11.png", 
+          "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ", 
+          "category":"Apple",
+          "price":"400"
+        },
+        {
+          "id":4,
+          "title":"Honor 50",
+          "img":"Honor 50.png", 
+          "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ", 
+          "category":"Honor",
+          "price":"200"
+        },
+        {
+          "id":5,
+          "title":"Redmi Note 12",
+          "img":"Redmi Note 12.png", 
+          "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ", 
+          "category":"Xiaomi",
+          "price":"170"
+        },
+        {
+          "id":6,
+          "title":"Redmi Note 13 Pro",
+          "img":"Redmi Note 13 Pro.png", 
+          "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ", 
+          "category":"Xiaomi",
+          "price":"200"
+        },
+        {
+          "id":7,
+          "title":"Samsung Galaxy A54",
+          "img":"Samsung Galaxy A54.png", 
+          "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ", 
+          "category":"Samsung",
+          "price":"350"
+        },
+        {
+          "id":8,
+          "title":"Honor 10",
+          "img":"Honor 10.png", 
+          "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ", 
+          "category":"Honor",
+          "price":"90"
+        },
+        {
+          "id":9,
+          "title":"Realme 11 PRO",
+          "img":"Realme 11 PRO.jpg", 
+          "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ", 
+          "category":"Realme",
+          "price":"200"
+        },
+        {
+          "id":10,
+          "title":"Realme C53",
+          "img":"Realme C53.png", 
+          "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ", 
+          "category":"Realme",
+          "price":"160"
+        }
+    ]
+}
