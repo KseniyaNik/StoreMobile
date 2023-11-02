@@ -3,7 +3,6 @@ import Footer from "./components/Footer";
 import { useEffect, useState } from "react";
 import Items from "./components/Items";
 import Categories from "./components/Categories";
-import ShowFullItems from "./components/ShowFullItem";
 import ShowFullItem from "./components/ShowFullItem";
 import axios from "axios";
 
@@ -54,7 +53,7 @@ export default function App() {
 
   return (
     <div className="wrapper">
-    <Header orders={orders} onDelete={deleteOrder}/>
+    <Header orders={orders} onDelete={deleteOrder} items={items}/>
     <Categories chooseCategory={chooseCategory}/>
     <Items allItems={currentItems} onShowItem={onShowItem} onAdd={addToOrder}/>
     {showFullItem && <ShowFullItem  onShowItem={onShowItem} onAdd={addToOrder} item={fullItem}/>}

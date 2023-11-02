@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import {IoTrashBinSharp} from "react-icons/io5";
 import Order from "./Order";
+import { saveAs } from "file-saver";
+import PriceListPDF from "./PriceListPDF";
+import { pdf } from "@react-pdf/renderer";
 
 const showOrders=(props)=>{
     let summa=0;
@@ -25,6 +28,10 @@ const showNothing=()=>{
 
 export default function Header(props){
     let[cartOpen, setCartOpen] = useState(false);
+    const handleDownloadPDF = async () => {
+    const pdfBlob = await pdf(<PriceListPDF items={props.items}/>).toBlob();
+    saveAs(pdfBlob, "price.pdf");
+    };
     return(
         <header>
         <div>
@@ -33,7 +40,7 @@ export default function Header(props){
             <li>Про нас</li>
             <li>Контакты</li>
             <li>Личный кабинет</li>
-            <li>Скачать прайс</li>
+            <li onClick={handleDownloadPDF}>Скачать прайс</li>
         </ul>
         <IoTrashBinSharp onClick={()=>setCartOpen(cartOpen=!cartOpen)}className={`shop-cart-button ${cartOpen && 'active'}`}/>
 
